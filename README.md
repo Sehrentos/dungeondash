@@ -1,27 +1,50 @@
 # Dungeon Dash!
 
-An experiment with making a dungeon crawler with Open Source or public domain assets, using Phaser 3 & Typescript.
+Forked from the original [dungeondash](https://github.com/mipearson/dungeondash).
 
-Live demo available at https://dungeon-dash.surge.sh
+An experiment with making a dungeon crawler with Open Source or public domain assets, using Phaser 3.
 
-MIT License applies unless otherwise noted.
+## Installation
 
-## Contributing
+Install require NodeJS dependencies.
+```sh
+npm install
+```
 
-Get a local instance running with `npm i` and then `npm run start`.
+## Build & run
+
+Console command
+```sh
+npm run build
+npm run start
+```
+
+## Development
+
+Open 2 terminals:
+1. serve web assets
+```sh
+npm run start
+```
+2. watch file changes and rebuild the client app
+```sh
+npm run watch
+```
+
+## Game play
 
 Press `R` in game to see a tilesheet reference, press `R` again to return to the game. Press `Q` to show the debug layer.
-
-Contributions must be valid typescript & formatted with prettier.js.
-
-Otherwise, go nuts.
 
 ## TODO
 
  * use `PerformanceObserver` to get a more accurate FPS value
+ * upgrade Phaser version
+ * fix Fonts XML loading
+ * better audio files
 
 ## Credits
 
+* Michael Pearson & Others. The original [dungeondash](https://github.com/mipearson/dungeondash) repo
 * Uses [mrpas](https://www.npmjs.com/package/mrpas) to determine the field of view
 * Uses [dungeoneer](https://www.npmjs.com/package/dungeoneer) to generate the dungeon
 * `Rogue*.png` files are from the [Rogue Dungeon Tileset 16x16](https://fongoose.itch.io/rogue-dungeon-tileset-16x16) by [fongoose](https://twitter.com/fongoosemike)

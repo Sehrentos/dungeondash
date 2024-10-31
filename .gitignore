@@ -2,3 +2,9 @@ node_modules
 .cache
 dist
 .DS_Store
+
+.env
+.7z
+.zip
+
+package-lock.json

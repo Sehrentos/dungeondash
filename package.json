@@ -1,21 +1,33 @@
 {
-  "name": "dkgame",
+  "private": true,
+  "type": "module",
+  "name": "dungeondash",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "parcel index.html",
-    "lint": "tsc --noEmit",
-    "ship": "rm -rf dist && parcel build index.html --no-source-maps && surge --domain https://dungeon-dash.surge.sh dist && rm -rf dist"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
-  "author": "Michael Pearson & Others",
+  "author": "Niko Hyrkäs, Michael Pearson & Others",
   "license": "MIT",
   "dependencies": {
-    "dungeoneer": "github:mipearson/dungeoneer#mp-fix-ts-bindings",
+    "dungeoneer": "^2.1.5",
+    "express": "^4.21.1",
     "mrpas": "^2.0.0",
-    "parcel": "^1.12.4",
-    "phaser": "^3.21.0",
-    "phaser-plugin-scene-watcher": "^4.0.0",
-    "typescript": "^3.7.4"
+    "phaser": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.2",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }

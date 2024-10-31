@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"module": "Preserve",
+		"target": "ESNext",
+		"moduleResolution": "bundler",
+		"noImplicitAny": false,
+		"resolveJsonModule": false,
+		"typeRoots": [
+			"./node_modules/@types",
+			"./typings",
+		],
+	},
+	"exclude": [
+		"assets",
+		"node_modules",
+	],
+	"include": [
+		"**/*.js",
+	],
+	"typeAcquisition": {
+		"enable": true,
+		"include": [],
+	},
+}
